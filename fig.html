@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html" class="examples">
+            Примеры
+        </a>
+        <a href="comp.html" class="comparison">
+            Сравнения
+        </a>
+        <a href="fig.html" class="figures">
+            Фигуры
+        </a>
+    </div>
+    <div class="bg">
+        <div class="head">
+          <div class="link"></div>
+          <h1>Фигуры</h1>
+          <div class="link"></div>
+        </div>
+      
+        <div class="block">
+          <div class="cont">
+            <div id="questions">
+              <div class="question">
+                <p id="question" class="dscr"></p>
+                <img id="image" class="image" src="">
+                <p id="correct-answer"></p>
+                <div id="inp">
+                    <input type="text" id="user-answer">
+                    <button id="submit" onclick="checkAnswer()">Проверить</button>
+                </div>
+                <button id="next" onclick="nextQuestion()" style="display: none;">→</button>
+              </div>
+            </div>
+      
+            <div id="result-section" style="display: none;">
+              <div id="result"></div>
+              <button id="restart" onclick="restart()">Заново</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="js3.js">
+
+    </script>
+</body>
+</html>

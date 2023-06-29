@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #46174b;
+    text-align: center;
+    background-image: url(img/Illustration3.jpg);
+    background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    margin-top: 54px;
+}
+
+.menu > a{
+    padding: 10px 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.5s;
+    max-width: 130px;
+    width: 130px;
+}
+
+.comparison{
+    color: #ebebeb;
+    font-weight: 600;
+    background-color: #178d20; 
+}
+
+.comparison:hover{
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #15bd23;  
+}
+
+.examples{
+    color: #464646;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.5);   
+}
+
+.examples:hover{
+    color: #464646;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.9);   
+}
+
+.figures{
+    color: #ebebeb;
+    font-weight: 600;
+    background-color: #c27614;  
+}
+
+.figures:hover{
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #e2870f;  
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.block{
+    width: 800px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    margin: 20px auto;
+    box-shadow: #000;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 40px auto;
+}
+
+#problem {
+    font-size: 72px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fd9a04;
+    text-shadow: 2px 2px 2px #6b6b6b;
+}
+
+input[type="text"] {
+    display: flex;
+    width: 300px;
+    font-size: 36px;
+    padding: 20px 20px;
+    margin: 20px auto;
+    font-weight: 500;
+    outline: none;
+    border: 2px solid #fd9a04;
+    border-radius: 10px;
+    color: #fd9a04;
+}
+
+input::placeholder{
+    color: #fd9a04;
+}
+
+#answer-btn {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    padding: 16px 32px;
+    background-color: #6d1470;;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+#restart {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    padding: 16px 32px;
+    background-color: #6d1470;;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#user-answer {
+    font-size: 24px;
+    height: 40px;
+}
+
+@media screen and (max-width: 1100px){
+    .block{
+        width: 500px;
+        border-radius: 50px;
+        background-color: rgb(255, 255, 255, 0.8);
+        padding: 20px 40px;
+        margin: 20px auto;
+        box-shadow: #000;
+    }
+
+    #problem {
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        color: #fd9a04;
+        text-shadow: 2px 2px 2px #6b6b6b;
+    }
+}

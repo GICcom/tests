@@ -1,25 +1,25 @@
-var numProblems = 10;
-var currentProblem = 0;
-var correctAnswers = 0;
+let numProblems = 10;
+let currentProblem = 0;
+let correctAnswers = 0;
 
 function generateProblem() {
-  var operand1 = Math.floor(Math.random() * 21);
-  var operand2 = Math.floor(Math.random() * 21);
-  var operator = '<div class="operator"></div>';
+  let operand1 = Math.floor(Math.random() * 21);
+  let operand2 = Math.floor(Math.random() * 21);
+  let operator = '<div class="operator"></div>';
 
-  var problemElement = document.getElementById('problem');
+  let problemElement = document.getElementById('problem');
   problemElement.innerHTML = operand1 + ' ' + operator + ' ' + operand2;
 }
 
 function checkAnswer(userAnswer) {
-  var problemElement = document.getElementById('problem');
-  var userAnswerElement = document.getElementById('user-answer');
+  let problemElement = document.getElementById('problem');
+  let userAnswerElement = document.getElementById('user-answer');
 
-  var operands = problemElement.textContent.split(' ');
-  var operand1 = parseInt(operands[0]);
-  var operand2 = parseInt(operands[2]);
+  let operands = problemElement.textContent.split(' ');
+  let operand1 = parseInt(operands[0]);
+  let operand2 = parseInt(operands[2]);
 
-  var isCorrect;
+  let isCorrect;
   if (userAnswer === 'равно') {
     isCorrect = operand1 === operand2;
   } else if (userAnswer === 'меньше') {
@@ -60,8 +60,8 @@ function restart() {
   correctAnswers = 0;
 
 
-  var problemElement = document.getElementById('problem');
-  var userAnswerElement = document.getElementById('user-answer');
+  let problemElement = document.getElementById('problem');
+  let userAnswerElement = document.getElementById('user-answer');
 
   problemElement.textContent = '';
   userAnswerElement.textContent = '';
